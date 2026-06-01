@@ -116,7 +116,7 @@ export default function Dashboard() {
       <header className="topbar">
         <div className="brand-sm">
           <div className="brand-mark sm">✓</div>
-          <span>Daily</span>
+          <span>Daily Todo List</span>
         </div>
         <div className="user">
           {user?.photoURL && <img src={user.photoURL} alt="" referrerPolicy="no-referrer" />}
