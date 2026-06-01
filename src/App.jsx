@@ -12,12 +12,12 @@ export default function App() {
         <div className="login-card">
           <div className="brand">
             <div className="brand-mark">✓</div>
-            <h1>Daily</h1>
+            <h1>Daily Todo</h1>
           </div>
           <p className="login-sub">Almost there — Firebase isn’t configured yet.</p>
           <div className="setup-note">
             <p>Create a <code>.env</code> file from <code>.env.example</code> and add your
-            Firebase web-app keys, then restart <code>npm run dev</code>.</p>
+              Firebase web-app keys, then restart <code>npm run dev</code>.</p>
             <p>See <code>SETUP.md</code> for the step-by-step guide.</p>
           </div>
         </div>
