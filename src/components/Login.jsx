@@ -26,7 +26,7 @@ export default function Login() {
       <div className="login-card">
         <div className="brand">
           <div className="brand-mark">✓</div>
-          <h1>Daily Planner</h1>
+          <h1>Daily Planner For</h1>
         </div>
         <p className="login-sub">
           Plan your day, track every task, and watch your week add up.
