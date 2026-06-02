@@ -12,7 +12,7 @@ export default function App() {
         <div className="login-card">
           <div className="brand">
             <div className="brand-mark">✓</div>
-            <h1>Daily Todo NEW</h1>
+            <h1>Daily ToDo List</h1>
           </div>
           <p className="login-sub">Almost there — Firebase isn’t configured yet.</p>
           <div className="setup-note">
