@@ -1,0 +1,30 @@
+name: Deploy (mirror main to Cloudflare production branch)
+
+# Cloudflare's production branch is `cloudflare/workers-autoconfig` (created by its
+# auto-setup). Rather than hunt for the dashboard setting, this mirrors every push
+# on `main` onto that branch, which triggers Cloudflare's production deploy.
+# To retire this: in Cloudflare → project → Settings, set the production branch to
+# `main`, then delete this workflow and the autoconfig branch.
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cf-production-sync
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    name: Mirror to production branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push main to cloudflare/workers-autoconfig
+        run: git push --force origin HEAD:cloudflare/workers-autoconfig
