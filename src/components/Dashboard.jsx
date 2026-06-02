@@ -40,7 +40,7 @@ export default function Dashboard() {
         notifyRef.current = on
         setNotifyState(on)
       })
-      .catch(() => {})
+      .catch(() => { })
     return unsub
   }, [user])
 
@@ -116,7 +116,7 @@ export default function Dashboard() {
       <header className="topbar">
         <div className="brand-sm">
           <div className="brand-mark sm">✓</div>
-          <span>Daily Todo NEW</span>
+          <span>Daily ToDo List</span>
         </div>
         <div className="user">
           {user?.photoURL && <img src={user.photoURL} alt="" referrerPolicy="no-referrer" />}
