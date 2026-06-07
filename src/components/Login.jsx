@@ -29,7 +29,7 @@ export default function Login() {
           <h1>Daily Planner</h1>
         </div>
         <p className="login-sub">
-          Plan your day, track every task, and watch your week add up.
+          Plan smarter, track every task, and see your productivity grow all week long.
         </p>
 
         <button className="google-btn" onClick={handleLogin} disabled={busy}>
